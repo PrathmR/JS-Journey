@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Emoji Click Game</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="game-container">
+    <h1>🎯 Click the Emoji!</h1>
+    <div id="countdown" class="countdown">3</div>
+    <p class="score">Score: <span id="score">0</span></p>
+    <p class="timer">⏱️ Time Left: <span id="timer">30</span>s</p>
+    <p class="highscore">🏆 High Score: <span id="highscore">0</span></p>
+    
+    <label for="level">Select Level:</label>
+    <select id="level">
+      <option value="1000">Easy</option>
+      <option value="700">Medium</option>
+      <option value="400">Hard</option>
+    </select>
+
+    <div id="emoji" class="emoji">🎈</div>
+    <button id="restartBtn">🔄 Restart</button>
+  </div>
+
+  <audio id="click-sound" src="click.mp3" preload="auto"></audio>
+  <audio id="game-over-sound" src="game-over.mp3" preload="auto"></audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
